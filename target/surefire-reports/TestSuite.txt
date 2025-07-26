@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 38, Failures: 3, Errors: 0, Skipped: 12, Time elapsed: 305.781 s <<< FAILURE! - in TestSuite
+setup(com.qa.crm2.tests.RegPageTest)  Time elapsed: 1.334 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in /Users/pravalmishra/Automation/CRM2_UI/src/test/resources/testrunners/testng_regression.xml
+
+loginPageTitleTest(com.qa.crm2.tests.LoginPageTest)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
+	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
+
+loginPageTitleTest(com.qa.crm2.tests.LoginPageTest)  Time elapsed: 0.467 s  <<< FAILURE!
+java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
+	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
+

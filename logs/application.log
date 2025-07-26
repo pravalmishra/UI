@@ -1,0 +1,14 @@
+2025-07-25 23:32:02,521 INFO com.qa.crm2.logger.Log [TestNG-tests-5] Browser name is : chrome
+2025-07-25 23:32:02,521 INFO com.qa.crm2.logger.Log [TestNG-tests-4] Browser name is : chrome
+2025-07-25 23:32:02,521 INFO com.qa.crm2.logger.Log [TestNG-tests-6] Browser name is : firefox
+2025-07-25 23:32:02,522 INFO com.qa.crm2.logger.Log [TestNG-tests-1] Browser name is : chrome
+2025-07-25 23:32:02,522 INFO com.qa.crm2.logger.Log [TestNG-tests-3] Browser name is : firefox
+2025-07-25 23:32:02,521 INFO com.qa.crm2.logger.Log [TestNG-tests-2] Browser name is : firefox
+2025-07-25 23:32:20,868 INFO com.qa.crm2.logger.Log [TestNG-tests-2] Login Page title :Account Login
+2025-07-25 23:32:21,359 INFO com.qa.crm2.logger.Log [TestNG-tests-1] Login Page title :Account Login
+2025-07-25 23:32:23,092 INFO com.qa.crm2.logger.Log [TestNG-tests-2] Login Page title :Account Login
+2025-07-25 23:32:23,701 INFO com.qa.crm2.logger.Log [TestNG-tests-1] Login Page title :Account Login
+2025-07-25 23:32:25,243 INFO com.qa.crm2.logger.Log [TestNG-tests-2] Login Page title :Account Login
+2025-07-25 23:32:26,070 INFO com.qa.crm2.logger.Log [TestNG-tests-1] Login Page title :Account Login
+2025-07-25 23:32:27,447 INFO com.qa.crm2.logger.Log [TestNG-tests-2] Login Page title :Account Login
+2025-07-25 23:32:28,412 INFO com.qa.crm2.logger.Log [TestNG-tests-1] Login Page title :Account Login

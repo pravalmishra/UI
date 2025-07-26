@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [Open Cart Regression Suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <listeners>
+    <listener class-name="com.qa.crm2.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.crm2.listeners.TestAllureListener"/>
+    <listener class-name="com.qa.crm2.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="6" parallel="tests" name="Login Page Test(failed)" verbose="3">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.crm2.tests.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.qa.crm2.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test(failed) -->
+  <test thread-count="6" parallel="tests" name="Add To Cart Page Test(failed)" verbose="3">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.crm2.tests.AddToCartPageTest">
+        <methods>
+          <include name="addToCartPageTitleTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="infoAddToCartSetup"/>
+        </methods>
+      </class> <!-- com.qa.crm2.tests.AddToCartPageTest -->
+    </classes>
+  </test> <!-- Add To Cart Page Test(failed) -->
+  <test thread-count="6" parallel="tests" name="Login Page Test Firefox(failed)" verbose="3">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.crm2.tests.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.qa.crm2.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test Firefox(failed) -->
+</suite> <!-- Failed suite [Open Cart Regression Suite] -->

@@ -1,0 +1,7 @@
+com/qa/crm2/tests/SearchResultsTest.class
+com/qa/crm2/tests/ProductPageInfoTest.class
+com/qa/crm2/tests/AddToCartPageTest.class
+com/qa/crm2/tests/AccountsPageTest.class
+com/qa/crm2/tests/LoginPageTest.class
+com/qa/crm2/tests/RegPageTest.class
+com/qa/crm2/base/BaseTest.class

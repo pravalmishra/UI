@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Open Cart Regression Suite" verbose="3" thread-count="6" parallel="tests">
+
+
+<listeners>
+   <listener class-name="com.qa.crm2.listeners.ExtentReportListener" />
+    <listener class-name="com.qa.crm2.listeners.TestAllureListener" />
+    <listener class-name="com.qa.crm2.listeners.AnnotationTransformer" /> 
+</listeners>
+
+	<test name="Login Page Test">
+      <parameter name="browser" value="chrome"></parameter>
+  
+		<classes>
+			<class name="com.qa.crm2.tests.LoginPageTest" />
+
+		</classes>
+	</test>
+	
+	<test name="Login Page Test Firefox">
+      <parameter name="browser" value="firefox"></parameter>
+  
+		<classes>
+			<class name="com.qa.crm2.tests.LoginPageTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="Accounts Page Test">
+	  <parameter name="browser" value="firefox"></parameter>
+       <classes>
+			<class name="com.qa.crm2.tests.AccountsPageTest" />
+		</classes>
+	</test>
+
+	<test name="Search Results Page Test">
+	    <parameter name="browser" value="chrome"></parameter>
+       <classes>
+			<class name="com.qa.crm2.tests.SearchResultsTest" />
+		</classes>
+	</test>
+
+	<test name="Product Info Page Test">
+	    <parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.crm2.tests.ProductPageInfoTest" />
+		</classes>
+	</test>
+	
+	<test name="Add To Cart Page Test">
+         <parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.crm2.tests.AddToCartPageTest" />
+		</classes>
+	</test>
+
+	<test name="Register Page Test">
+	
+		<classes>
+			<class name="com.qa.crm2.tests.RegPageTest" />
+		</classes>
+	</test> 
+
+
+
+</suite>
