@@ -31,7 +31,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.0.0</version>
+			<version>7.10.0</version>
 		</dependency>
 
 		<dependency>
@@ -135,7 +135,7 @@
 					<suiteXmlFiles>
 					  <!-- <suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>-->
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile> 
-						 <!--<suiteXmlFile>testng.xml</suiteXmlFile>-->
+						 <suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<argLine>
