@@ -18,30 +18,4 @@
       </class> <!-- com.qa.crm2.tests.LoginPageTest -->
     </classes>
   </test> <!-- Login Page Test(failed) -->
-  <test thread-count="6" parallel="tests" name="Add To Cart Page Test(failed)" verbose="3">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.qa.crm2.tests.AddToCartPageTest">
-        <methods>
-          <include name="addToCartPageTitleTest"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="infoAddToCartSetup"/>
-        </methods>
-      </class> <!-- com.qa.crm2.tests.AddToCartPageTest -->
-    </classes>
-  </test> <!-- Add To Cart Page Test(failed) -->
-  <test thread-count="6" parallel="tests" name="Login Page Test Firefox(failed)" verbose="3">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.qa.crm2.tests.LoginPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- com.qa.crm2.tests.LoginPageTest -->
-    </classes>
-  </test> <!-- Login Page Test Firefox(failed) -->
 </suite> <!-- Failed suite [Open Cart Regression Suite] -->
