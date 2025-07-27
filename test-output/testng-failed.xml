@@ -6,6 +6,18 @@
     <listener class-name="com.qa.crm2.listeners.TestAllureListener"/>
     <listener class-name="com.qa.crm2.listeners.AnnotationTransformer"/>
   </listeners>
+  <test thread-count="6" parallel="tests" name="Login Page Test Firefox(failed)" verbose="3">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.crm2.tests.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.qa.crm2.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test Firefox(failed) -->
   <test thread-count="6" parallel="tests" name="Login Page Test(failed)" verbose="3">
     <parameter name="browser" value="chrome"/>
     <classes>

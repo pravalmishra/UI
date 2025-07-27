@@ -58,7 +58,7 @@
 	</test>
 
 	<test name="Register Page Test">
-	
+	   <parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.qa.crm2.tests.RegPageTest" />
 		</classes>

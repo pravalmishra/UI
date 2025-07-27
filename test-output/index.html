@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,11 +21,11 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Open_Cart_Regression_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Open Cart Regression Suite</span>
+              <span class="suite-name border-passed">Open Cart Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,45 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods, 1 failed,  3 skipped,  18 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Open_Cart_Regression_Suite" class="hide-methods failed suite-Open_Cart_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Open_Cart_Regression_Suite -->
-                      <a href="#" panel-name="suite-Open_Cart_Regression_Suite" class="show-methods failed suite-Open_Cart_Regression_Suite"> (show)</a> <!-- show-methods failed suite-Open_Cart_Regression_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Open_Cart_Regression_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Open_Cart_Regression_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Open_Cart_Regression_Suite" class="hide-methods skipped suite-Open_Cart_Regression_Suite"> (hide)</a> <!-- hide-methods skipped suite-Open_Cart_Regression_Suite -->
-                      <a href="#" panel-name="suite-Open_Cart_Regression_Suite" class="show-methods skipped suite-Open_Cart_Regression_Suite"> (show)</a> <!-- show-methods skipped suite-Open_Cart_Regression_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Open_Cart_Regression_Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Open_Cart_Regression_Suite -->
+                    <span class="method-stats">37 methods,   37 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -140,7 +103,27 @@
                     <div class="method-list-content passed suite-Open_Cart_Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.AccountsPageTest" class="method navigator-link" hash-for-method="accPageHeadersTest">accPageHeadersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.AccountsPageTest" class="method navigator-link" hash-for-method="accPageTitleTest">accPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.AccountsPageTest" class="method navigator-link" hash-for-method="accPageURLTest">accPageURLTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="addItemTest">addItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.AddToCartPageTest" class="method navigator-link" hash-for-method="addToCartPageTitleTest">addToCartPageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -150,7 +133,42 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="forgotPwdLinkExistTest">forgotPwdLinkExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.AccountsPageTest" class="method navigator-link" hash-for-method="isLogoutLinkExistTest">isLogoutLinkExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.AccountsPageTest" class="method navigator-link" hash-for-method="isMyAccountLinkExistTest">isMyAccountLinkExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageUrlTest">loginPageUrlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginPageUrlTest">loginPageUrlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -170,17 +188,47 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productHeaderTest(macbook, MacBook Pro)">productHeaderTest(macbook, MacBook Pro)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productHeaderTest(samsung, Samsung Galaxy Tab 10.1)">productHeaderTest(samsung, Samsung Galaxy Tab 10.1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productHeaderTest(macbook, MacBook Pro)">productHeaderTest(macbook, MacBook Pro)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(macbook, MacBook Pro, 4)">productImagesCountTest(macbook, MacBook Pro, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(imac, iMac, 3)">productImagesCountTest(imac, iMac, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)">productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)">productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)">productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(macbook, MacBook Pro, 4)">productImagesCountTest(macbook, MacBook Pro, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(imac, iMac, 3)">productImagesCountTest(imac, iMac, 3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -195,37 +243,47 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(imac, iMac, 3)">productImagesCountTest(imac, iMac, 3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(imac, iMac, 3)">productImagesCountTest(imac, iMac, 3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)">productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(macbook, MacBook Pro, 4)">productImagesCountTest(macbook, MacBook Pro, 4)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(macbook, MacBook Pro, 4)">productImagesCountTest(macbook, MacBook Pro, 4)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)">productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.ProductPageInfoTest" class="method navigator-link" hash-for-method="productInfoTest">productInfoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.SearchResultsTest" class="method navigator-link" hash-for-method="searchResultsCountTest(macbook, 3)">searchResultsCountTest(macbook, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.SearchResultsTest" class="method navigator-link" hash-for-method="searchResultsCountTest(imac, 1)">searchResultsCountTest(imac, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.SearchResultsTest" class="method navigator-link" hash-for-method="searchResultsCountTest(samsung, 2)">searchResultsCountTest(samsung, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.SearchResultsTest" class="method navigator-link" hash-for-method="searchResultsTest">searchResultsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.AccountsPageTest" class="method navigator-link" hash-for-method="searchTest">searchTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.RegPageTest" class="method navigator-link" hash-for-method="userRegTest(Om, Gautam, 88765456780, om@123, yes)">userRegTest(Om, Gautam, 88765456780, om@123, yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.RegPageTest" class="method navigator-link" hash-for-method="userRegTest(Gaurav, Gupta, 98765456789, gg@123, yes)">userRegTest(Gaurav, Gupta, 98765456789, gg@123, yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Open_Cart_Regression_Suite" title="com.qa.crm2.tests.RegPageTest" class="method navigator-link" hash-for-method="userRegTest(Shilpa, mamiidipelli, 98765456780, sh@123, no)">userRegTest(Shilpa, mamiidipelli, 98765456780, sh@123, no)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Open_Cart_Regression_Suite -->
@@ -240,174 +298,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Open_Cart_Regression_Suite" class="panel Open_Cart_Regression_Suite">
-          <div class="suite-Open_Cart_Regression_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.crm2.tests.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPageTitleTest">
-                  </a> <!-- loginPageTitleTest -->
-                  <span class="method-name">loginPageTitleTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Open_Cart_Regression_Suite-class-failed -->
-          <div class="suite-Open_Cart_Regression_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.qa.crm2.tests.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPageTitleTest">
-                  </a> <!-- loginPageTitleTest -->
-                  <span class="method-name">loginPageTitleTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPageTitleTest">
-                  </a> <!-- loginPageTitleTest -->
-                  <span class="method-name">loginPageTitleTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPageTitleTest">
-                  </a> <!-- loginPageTitleTest -->
-                  <span class="method-name">loginPageTitleTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Open_Cart_Regression_Suite-class-skipped -->
           <div class="suite-Open_Cart_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -426,7 +316,7 @@
                   <a name="productHeaderTest(samsung, Samsung SyncMaster 941BW)">
                   </a> <!-- productHeaderTest(samsung, Samsung SyncMaster 941BW) -->
                   <span class="method-name">productHeaderTest</span>
-                  <span class="parameters">(samsung, Samsung SyncMaster 941BW)</span>
+                  <span class="parameters">(samsung,Samsung SyncMaster 941BW)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -434,15 +324,7 @@
                   <a name="productHeaderTest(imac, iMac)">
                   </a> <!-- productHeaderTest(imac, iMac) -->
                   <span class="method-name">productHeaderTest</span>
-                  <span class="parameters">(imac, iMac)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productHeaderTest(macbook, MacBook Pro)">
-                  </a> <!-- productHeaderTest(macbook, MacBook Pro) -->
-                  <span class="method-name">productHeaderTest</span>
-                  <span class="parameters">(macbook, MacBook Pro)</span>
+                  <span class="parameters">(imac,iMac)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -450,7 +332,31 @@
                   <a name="productHeaderTest(samsung, Samsung Galaxy Tab 10.1)">
                   </a> <!-- productHeaderTest(samsung, Samsung Galaxy Tab 10.1) -->
                   <span class="method-name">productHeaderTest</span>
-                  <span class="parameters">(samsung, Samsung Galaxy Tab 10.1)</span>
+                  <span class="parameters">(samsung,Samsung Galaxy Tab 10.1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productHeaderTest(macbook, MacBook Pro)">
+                  </a> <!-- productHeaderTest(macbook, MacBook Pro) -->
+                  <span class="method-name">productHeaderTest</span>
+                  <span class="parameters">(macbook,MacBook Pro)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImagesCountTest(macbook, MacBook Pro, 4)">
+                  </a> <!-- productImagesCountTest(macbook, MacBook Pro, 4) -->
+                  <span class="method-name">productImagesCountTest</span>
+                  <span class="parameters">(macbook,MacBook Pro,4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImagesCountTest(imac, iMac, 3)">
+                  </a> <!-- productImagesCountTest(imac, iMac, 3) -->
+                  <span class="method-name">productImagesCountTest</span>
+                  <span class="parameters">(imac,iMac,3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -458,7 +364,15 @@
                   <a name="productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)">
                   </a> <!-- productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1) -->
                   <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(samsung, Samsung SyncMaster 941BW, 1)</span>
+                  <span class="parameters">(samsung,Samsung SyncMaster 941BW,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)">
+                  </a> <!-- productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1) -->
+                  <span class="method-name">productImagesCountTest</span>
+                  <span class="parameters">(samsung,Samsung SyncMaster 941BW,1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -466,7 +380,31 @@
                   <a name="productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)">
                   </a> <!-- productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7) -->
                   <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(samsung, Samsung Galaxy Tab 10.1, 7)</span>
+                  <span class="parameters">(samsung,Samsung Galaxy Tab 10.1,7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImagesCountTest(macbook, MacBook Pro, 4)">
+                  </a> <!-- productImagesCountTest(macbook, MacBook Pro, 4) -->
+                  <span class="method-name">productImagesCountTest</span>
+                  <span class="parameters">(macbook,MacBook Pro,4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImagesCountTest(imac, iMac, 3)">
+                  </a> <!-- productImagesCountTest(imac, iMac, 3) -->
+                  <span class="method-name">productImagesCountTest</span>
+                  <span class="parameters">(imac,iMac,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)">
+                  </a> <!-- productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7) -->
+                  <span class="method-name">productImagesCountTest</span>
+                  <span class="parameters">(samsung,Samsung Galaxy Tab 10.1,7)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -474,55 +412,7 @@
                   <a name="productImagesCountTest(canon, Canon EOS 5D, 3)">
                   </a> <!-- productImagesCountTest(canon, Canon EOS 5D, 3) -->
                   <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(canon, Canon EOS 5D, 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productImagesCountTest(imac, iMac, 3)">
-                  </a> <!-- productImagesCountTest(imac, iMac, 3) -->
-                  <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(imac, iMac, 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productImagesCountTest(imac, iMac, 3)">
-                  </a> <!-- productImagesCountTest(imac, iMac, 3) -->
-                  <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(imac, iMac, 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)">
-                  </a> <!-- productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7) -->
-                  <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(samsung, Samsung Galaxy Tab 10.1, 7)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productImagesCountTest(macbook, MacBook Pro, 4)">
-                  </a> <!-- productImagesCountTest(macbook, MacBook Pro, 4) -->
-                  <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(macbook, MacBook Pro, 4)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productImagesCountTest(macbook, MacBook Pro, 4)">
-                  </a> <!-- productImagesCountTest(macbook, MacBook Pro, 4) -->
-                  <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(macbook, MacBook Pro, 4)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)">
-                  </a> <!-- productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1) -->
-                  <span class="method-name">productImagesCountTest</span>
-                  <span class="parameters">(samsung, Samsung SyncMaster 941BW, 1)</span>
+                  <span class="parameters">(canon,Canon EOS 5D,3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -530,6 +420,127 @@
                   <a name="productInfoTest">
                   </a> <!-- productInfoTest -->
                   <span class="method-name">productInfoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Open_Cart_Regression_Suite-class-passed -->
+          <div class="suite-Open_Cart_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.crm2.tests.SearchResultsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchResultsCountTest(macbook, 3)">
+                  </a> <!-- searchResultsCountTest(macbook, 3) -->
+                  <span class="method-name">searchResultsCountTest</span>
+                  <span class="parameters">(macbook,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchResultsCountTest(imac, 1)">
+                  </a> <!-- searchResultsCountTest(imac, 1) -->
+                  <span class="method-name">searchResultsCountTest</span>
+                  <span class="parameters">(imac,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchResultsCountTest(samsung, 2)">
+                  </a> <!-- searchResultsCountTest(samsung, 2) -->
+                  <span class="method-name">searchResultsCountTest</span>
+                  <span class="parameters">(samsung,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchResultsTest">
+                  </a> <!-- searchResultsTest -->
+                  <span class="method-name">searchResultsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Open_Cart_Regression_Suite-class-passed -->
+          <div class="suite-Open_Cart_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.crm2.tests.RegPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegTest(Om, Gautam, 88765456780, om@123, yes)">
+                  </a> <!-- userRegTest(Om, Gautam, 88765456780, om@123, yes) -->
+                  <span class="method-name">userRegTest</span>
+                  <span class="parameters">(Om,Gautam,88765456780,om@123,yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegTest(Gaurav, Gupta, 98765456789, gg@123, yes)">
+                  </a> <!-- userRegTest(Gaurav, Gupta, 98765456789, gg@123, yes) -->
+                  <span class="method-name">userRegTest</span>
+                  <span class="parameters">(Gaurav,Gupta,98765456789,gg@123,yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegTest(Shilpa, mamiidipelli, 98765456780, sh@123, no)">
+                  </a> <!-- userRegTest(Shilpa, mamiidipelli, 98765456780, sh@123, no) -->
+                  <span class="method-name">userRegTest</span>
+                  <span class="parameters">(Shilpa,mamiidipelli,98765456780,sh@123,no)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Open_Cart_Regression_Suite-class-passed -->
+          <div class="suite-Open_Cart_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.crm2.tests.AccountsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="accPageHeadersTest">
+                  </a> <!-- accPageHeadersTest -->
+                  <span class="method-name">accPageHeadersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accPageTitleTest">
+                  </a> <!-- accPageTitleTest -->
+                  <span class="method-name">accPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accPageURLTest">
+                  </a> <!-- accPageURLTest -->
+                  <span class="method-name">accPageURLTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isLogoutLinkExistTest">
+                  </a> <!-- isLogoutLinkExistTest -->
+                  <span class="method-name">isLogoutLinkExistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isMyAccountLinkExistTest">
+                  </a> <!-- isMyAccountLinkExistTest -->
+                  <span class="method-name">isMyAccountLinkExistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTest">
+                  </a> <!-- searchTest -->
+                  <span class="method-name">searchTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -549,6 +560,34 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="forgotPwdLinkExistTest">
+                  </a> <!-- forgotPwdLinkExistTest -->
+                  <span class="method-name">forgotPwdLinkExistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageUrlTest">
+                  </a> <!-- loginPageUrlTest -->
+                  <span class="method-name">loginPageUrlTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginPageUrlTest">
                   </a> <!-- loginPageUrlTest -->
                   <span class="method-name">loginPageUrlTest</span>
@@ -559,6 +598,28 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Open_Cart_Regression_Suite-class-passed -->
+          <div class="suite-Open_Cart_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.crm2.tests.AddToCartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartPageTitleTest">
+                  </a> <!-- addToCartPageTitleTest -->
+                  <span class="method-name">addToCartPageTitleTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -615,6 +676,7 @@
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Add To Cart Page Test --&gt;
   &lt;test thread-count=&quot;6&quot; parallel=&quot;tests&quot; name=&quot;Register Page Test&quot; verbose=&quot;3&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.crm2.tests.RegPageTest&quot;/&gt;
     &lt;/classes&gt;
@@ -674,100 +736,160 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(22);
+data.addRows(37);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'productInfoTest')
-data.setCell(0, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(0, 3, 8858);
+data.setCell(0, 1, 'userRegTest')
+data.setCell(0, 2, 'com.qa.crm2.tests.RegPageTest')
+data.setCell(0, 3, 39820);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'productHeaderTest')
-data.setCell(1, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(1, 3, 7969);
+data.setCell(1, 1, 'userRegTest')
+data.setCell(1, 2, 'com.qa.crm2.tests.RegPageTest')
+data.setCell(1, 3, 38868);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginPageTitleTest')
-data.setCell(2, 2, 'com.qa.crm2.tests.LoginPageTest')
-data.setCell(2, 3, 7149);
+data.setCell(2, 1, 'addToCartPageTitleTest')
+data.setCell(2, 2, 'com.qa.crm2.tests.AddToCartPageTest')
+data.setCell(2, 3, 38372);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'productHeaderTest')
+data.setCell(3, 1, 'addItemTest')
 data.setCell(3, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(3, 3, 6986);
+data.setCell(3, 3, 38308);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'productImagesCountTest')
 data.setCell(4, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(4, 3, 6376);
+data.setCell(4, 3, 36784);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'addItemTest')
+data.setCell(5, 1, 'productHeaderTest')
 data.setCell(5, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(5, 3, 6255);
+data.setCell(5, 3, 36772);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'forgotPwdLinkExistTest')
-data.setCell(6, 2, 'com.qa.crm2.tests.LoginPageTest')
-data.setCell(6, 3, 5926);
+data.setCell(6, 1, 'productImagesCountTest')
+data.setCell(6, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
+data.setCell(6, 3, 36696);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginTest')
-data.setCell(7, 2, 'com.qa.crm2.tests.LoginPageTest')
-data.setCell(7, 3, 3256);
+data.setCell(7, 1, 'productImagesCountTest')
+data.setCell(7, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
+data.setCell(7, 3, 36513);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'productHeaderTest')
-data.setCell(8, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(8, 3, 2192);
+data.setCell(8, 1, 'searchResultsCountTest')
+data.setCell(8, 2, 'com.qa.crm2.tests.SearchResultsTest')
+data.setCell(8, 3, 36363);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'productHeaderTest')
-data.setCell(9, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(9, 3, 2126);
+data.setCell(9, 1, 'forgotPwdLinkExistTest')
+data.setCell(9, 2, 'com.qa.crm2.tests.LoginPageTest')
+data.setCell(9, 3, 35520);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'loginPageTitleTest')
+data.setCell(10, 1, 'forgotPwdLinkExistTest')
 data.setCell(10, 2, 'com.qa.crm2.tests.LoginPageTest')
-data.setCell(10, 3, 2100);
+data.setCell(10, 3, 35475);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'loginPageTitleTest')
-data.setCell(11, 2, 'com.qa.crm2.tests.LoginPageTest')
-data.setCell(11, 3, 2088);
+data.setCell(11, 1, 'accPageHeadersTest')
+data.setCell(11, 2, 'com.qa.crm2.tests.AccountsPageTest')
+data.setCell(11, 3, 35217);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'loginPageTitleTest')
-data.setCell(12, 2, 'com.qa.crm2.tests.LoginPageTest')
-data.setCell(12, 3, 2084);
+data.setCell(12, 1, 'userRegTest')
+data.setCell(12, 2, 'com.qa.crm2.tests.RegPageTest')
+data.setCell(12, 3, 3735);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'productImagesCountTest')
 data.setCell(13, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(13, 3, 2005);
+data.setCell(13, 3, 2863);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'productImagesCountTest')
+data.setCell(14, 1, 'productHeaderTest')
 data.setCell(14, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(14, 3, 1684);
+data.setCell(14, 3, 1928);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'productImagesCountTest')
 data.setCell(15, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(15, 3, 1452);
+data.setCell(15, 3, 1766);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'productImagesCountTest')
+data.setCell(16, 1, 'productInfoTest')
 data.setCell(16, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(16, 3, 1409);
+data.setCell(16, 3, 1541);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'productImagesCountTest')
-data.setCell(17, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(17, 3, 1399);
+data.setCell(17, 1, 'loginTest')
+data.setCell(17, 2, 'com.qa.crm2.tests.LoginPageTest')
+data.setCell(17, 3, 1381);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'productImagesCountTest')
-data.setCell(18, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(18, 3, 1238);
+data.setCell(18, 1, 'loginTest')
+data.setCell(18, 2, 'com.qa.crm2.tests.LoginPageTest')
+data.setCell(18, 3, 1379);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'productImagesCountTest')
-data.setCell(19, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(19, 3, 1022);
+data.setCell(19, 1, 'searchResultsCountTest')
+data.setCell(19, 2, 'com.qa.crm2.tests.SearchResultsTest')
+data.setCell(19, 3, 1378);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'productImagesCountTest')
 data.setCell(20, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
-data.setCell(20, 3, 1021);
+data.setCell(20, 3, 1377);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'loginPageUrlTest')
-data.setCell(21, 2, 'com.qa.crm2.tests.LoginPageTest')
-data.setCell(21, 3, 15);
+data.setCell(21, 1, 'productImagesCountTest')
+data.setCell(21, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
+data.setCell(21, 3, 1346);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'productHeaderTest')
+data.setCell(22, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
+data.setCell(22, 3, 1274);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'productHeaderTest')
+data.setCell(23, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
+data.setCell(23, 3, 1237);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'productImagesCountTest')
+data.setCell(24, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
+data.setCell(24, 3, 1224);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'searchResultsTest')
+data.setCell(25, 2, 'com.qa.crm2.tests.SearchResultsTest')
+data.setCell(25, 3, 1189);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'productImagesCountTest')
+data.setCell(26, 2, 'com.qa.crm2.tests.ProductPageInfoTest')
+data.setCell(26, 3, 1184);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'searchTest')
+data.setCell(27, 2, 'com.qa.crm2.tests.AccountsPageTest')
+data.setCell(27, 3, 1118);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'searchResultsCountTest')
+data.setCell(28, 2, 'com.qa.crm2.tests.SearchResultsTest')
+data.setCell(28, 3, 1042);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'isLogoutLinkExistTest')
+data.setCell(29, 2, 'com.qa.crm2.tests.AccountsPageTest')
+data.setCell(29, 3, 866);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'isMyAccountLinkExistTest')
+data.setCell(30, 2, 'com.qa.crm2.tests.AccountsPageTest')
+data.setCell(30, 3, 144);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'accPageURLTest')
+data.setCell(31, 2, 'com.qa.crm2.tests.AccountsPageTest')
+data.setCell(31, 3, 55);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'loginPageTitleTest')
+data.setCell(32, 2, 'com.qa.crm2.tests.LoginPageTest')
+data.setCell(32, 3, 54);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'loginPageUrlTest')
+data.setCell(33, 2, 'com.qa.crm2.tests.LoginPageTest')
+data.setCell(33, 3, 42);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'accPageTitleTest')
+data.setCell(34, 2, 'com.qa.crm2.tests.AccountsPageTest')
+data.setCell(34, 3, 35);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'loginPageUrlTest')
+data.setCell(35, 2, 'com.qa.crm2.tests.LoginPageTest')
+data.setCell(35, 3, 29);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'loginPageTitleTest')
+data.setCell(36, 2, 'com.qa.crm2.tests.LoginPageTest')
+data.setCell(36, 3, 24);
 window.suiteTableData['Open_Cart_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Open_Cart_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Open_Cart_Regression_Suite">
               </div> <!-- times-div-Open_Cart_Regression_Suite -->
             </div> <!-- times-div -->
@@ -795,18 +917,11 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
@@ -818,9 +933,9 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.AddToCartPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setup(firefox)</span>
+                <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
@@ -833,315 +948,310 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.AddToCartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">infoAddToCartSetup</span>
-                <span class="method-start">14530 ms</span>
+                <span class="method-name">searchResultsSetup</span>
+                <span class="method-start">44887 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">accSetup</span>
-                <span class="method-start">14530 ms</span>
+                <span class="method-name">infoPageSetup</span>
+                <span class="method-start">44887 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">forgotPwdLinkExistTest</span>
-                <span class="method-start">14649 ms</span>
+                <span class="method-start">45426 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.AddToCartPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.crm2.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">accSetup</span>
+                <span class="method-start">45589 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">addToCartPageTitleTest</span>
-                <span class="method-start">15957 ms</span>
+                <span class="method-name">searchResultsCountTest(macbook, 3)</span>
+                <span class="method-start">47061 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addItemTest</span>
+                <span class="method-start">47061 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.AccountsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">accPageHeadersTest</span>
-                <span class="method-start">16033 ms</span>
+                <span class="method-start">47290 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">searchResultsSetup</span>
-                <span class="method-start">18916 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">forgotPwdLinkExistTest</span>
-                <span class="method-start">18937 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">infoPageSetup</span>
-                <span class="method-start">18993 ms</span>
-              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">20840 ms</span>
+                <span class="method-start">81079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPageUrlTest</span>
+                <span class="method-start">81141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">81189 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.AccountsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">accPageTitleTest</span>
-                <span class="method-start">21168 ms</span>
+                <span class="method-start">82518 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">accPageURLTest</span>
-                <span class="method-start">21203 ms</span>
+                <span class="method-start">82557 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">82585 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.AccountsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">isLogoutLinkExistTest</span>
-                <span class="method-start">21242 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">isMyAccountLinkExistTest</span>
-                <span class="method-start">21380 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchTest</span>
-                <span class="method-start">21437 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22190 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.RegPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">regSetup</span>
-                <span class="method-start">22664 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">addItemTest</span>
-                <span class="method-start">23490 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">23492 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">searchResultsCountTest(macbook, 3)</span>
-                <span class="method-start">23575 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.AddToCartPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24043 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.RegPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">userRegTest</span>
-                <span class="method-start">24722 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24745 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">25965 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">25997 ms</span>
+                <span class="method-start">82628 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">searchResultsCountTest(imac, 1)</span>
-                <span class="method-start">26364 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchResultsCountTest(samsung, 2)</span>
-                <span class="method-start">27381 ms</span>
+                <span class="method-start">83858 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.crm2.tests.AccountsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">28227 ms</span>
+                <span class="method-name">isMyAccountLinkExistTest</span>
+                <span class="method-start">83896 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.RegPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">84013 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchTest</span>
+                <span class="method-start">84050 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchResultsCountTest(samsung, 2)</span>
+                <span class="method-start">84916 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">85172 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productHeaderTest(macbook, MacBook Pro)</span>
+                <span class="method-start">85386 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">searchResultsTest</span>
-                <span class="method-start">28230 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">28802 ms</span>
+                <span class="method-start">86320 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">productHeaderTest(macbook, MacBook Pro)</span>
-                <span class="method-start">29753 ms</span>
+                <span class="method-name">productHeaderTest(imac, iMac)</span>
+                <span class="method-start">87327 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.SearchResultsTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30333 ms</span>
+                <span class="method-start">87529 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.crm2.tests.AddToCartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">infoAddToCartSetup</span>
+                <span class="method-start">95362 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">31077 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginPageUrlTest</span>
-                <span class="method-start">31328 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">36352 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">37463 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">productHeaderTest(imac, iMac)</span>
-                <span class="method-start">37723 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">38412 ms</span>
+                <span class="method-name">addToCartPageTitleTest</span>
+                <span class="method-start">96785 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">productHeaderTest(samsung, Samsung SyncMaster 941BW)</span>
-                <span class="method-start">39920 ms</span>
+                <span class="method-start">124106 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginPageUrlTest</span>
-                <span class="method-start">40877 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">40895 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">productHeaderTest(samsung, Samsung Galaxy Tab 10.1)</span>
-                <span class="method-start">42079 ms</span>
+                <span class="method-start">125395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productImagesCountTest(macbook, MacBook Pro, 4)</span>
+                <span class="method-start">126645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productImagesCountTest(imac, iMac, 3)</span>
+                <span class="method-start">127996 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.crm2.tests.AddToCartPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44156 ms</span>
+                <span class="method-start">135161 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">forgotPwdLinkExistTest</span>
+                <span class="method-start">141987 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">productImagesCountTest(macbook, MacBook Pro, 4)</span>
-                <span class="method-start">49070 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">productImagesCountTest(imac, iMac, 3)</span>
-                <span class="method-start">50310 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)</span>
-                <span class="method-start">51995 ms</span>
+                <span class="method-start">164698 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)</span>
-                <span class="method-start">53453 ms</span>
+                <span class="method-start">165891 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">productImagesCountTest(macbook, MacBook Pro, 4)</span>
-                <span class="method-start">54945 ms</span>
+                <span class="method-start">168178 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">177473 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">productImagesCountTest(imac, iMac, 3)</span>
-                <span class="method-start">61329 ms</span>
+                <span class="method-name">loginPageUrlTest</span>
+                <span class="method-start">177499 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)</span>
-                <span class="method-start">62743 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)</span>
-                <span class="method-start">63768 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">productImagesCountTest(canon, Canon EOS 5D, 3)</span>
-                <span class="method-start">64791 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">productInfoTest</span>
-                <span class="method-start">66798 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">177534 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">75658 ms</span>
+                <span class="method-start">178924 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.RegPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">regSetup</span>
+                <span class="method-start">186074 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">userRegTest(Gaurav, Gupta, 98765456789, gg@123, yes)</span>
+                <span class="method-start">187446 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productImagesCountTest(imac, iMac, 3)</span>
+                <span class="method-start">204699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productImagesCountTest(samsung, Samsung SyncMaster 941BW, 1)</span>
+                <span class="method-start">206470 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productImagesCountTest(samsung, Samsung Galaxy Tab 10.1, 7)</span>
+                <span class="method-start">207850 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productImagesCountTest(canon, Canon EOS 5D, 3)</span>
+                <span class="method-start">210723 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.RegPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userRegTest(Shilpa, mamiidipelli, 98765456780, sh@123, no)</span>
+                <span class="method-start">227280 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userRegTest(Om, Gautam, 88765456780, om@123, yes)</span>
+                <span class="method-start">231031 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.ProductPageInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productInfoTest</span>
+                <span class="method-start">247524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">249069 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.crm2.tests.RegPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">269905 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

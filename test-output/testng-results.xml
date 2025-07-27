@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="22" passed="18" failed="1" skipped="0">
+<testng-results ignored="0" total="37" passed="37" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-26T13:34:04 IST" name="Open Cart Regression Suite" finished-at="2025-07-26T13:35:19 IST" duration-ms="75908">
+  <suite started-at="2025-07-27T07:12:33 IST" name="Open Cart Regression Suite" finished-at="2025-07-27T07:17:03 IST" duration-ms="270618">
     <groups>
     </groups>
-    <test started-at="2025-07-26T13:34:04 IST" name="Login Page Test" finished-at="2025-07-26T13:34:48 IST" duration-ms="44402">
+    <test started-at="2025-07-27T07:12:33 IST" name="Login Page Test" finished-at="2025-07-27T07:13:55 IST" duration-ms="82795">
       <class name="com.qa.crm2.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:04 IST" name="setup" finished-at="2025-07-26T13:34:23 IST" duration-ms="18935" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.LoginPageTest@48a2db72]" started-at="2025-07-27T07:12:33 IST" name="setup" finished-at="2025-07-27T07:13:18 IST" duration-ms="45365" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,191 +18,78 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="forgotPwdLinkExistTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:23 IST" name="forgotPwdLinkExistTest" finished-at="2025-07-26T13:34:29 IST" duration-ms="5926" status="PASS">
+        <test-method signature="forgotPwdLinkExistTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@48a2db72]" started-at="2025-07-27T07:13:18 IST" name="forgotPwdLinkExistTest" finished-at="2025-07-27T07:13:54 IST" duration-ms="35520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPwdLinkExistTest -->
-        <test-method retried="true" signature="loginPageTitleTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:30 IST" name="loginPageTitleTest" finished-at="2025-07-26T13:34:32 IST" duration-ms="2088" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[=====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@48a2db72]" started-at="2025-07-27T07:13:54 IST" name="loginPageTitleTest" finished-at="2025-07-27T07:13:54 IST" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method retried="true" signature="loginPageTitleTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:33 IST" name="loginPageTitleTest" finished-at="2025-07-26T13:34:35 IST" duration-ms="2084" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[=====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method retried="true" signature="loginPageTitleTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:35 IST" name="loginPageTitleTest" finished-at="2025-07-26T13:34:42 IST" duration-ms="7149" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[=====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:42 IST" name="loginPageTitleTest" finished-at="2025-07-26T13:34:44 IST" duration-ms="2100" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[=====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageUrlTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:45 IST" name="loginPageUrlTest" finished-at="2025-07-26T13:34:45 IST" duration-ms="15" status="PASS">
+        <test-method signature="loginPageUrlTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@48a2db72]" started-at="2025-07-27T07:13:54 IST" name="loginPageUrlTest" finished-at="2025-07-27T07:13:54 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageUrlTest -->
-        <test-method signature="loginTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:45 IST" name="loginTest" finished-at="2025-07-26T13:34:48 IST" duration-ms="3256" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@48a2db72]" started-at="2025-07-27T07:13:54 IST" name="loginTest" finished-at="2025-07-27T07:13:55 IST" duration-ms="1381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@5a917723]" started-at="2025-07-26T13:34:48 IST" name="tearDown" finished-at="2025-07-26T13:34:48 IST" duration-ms="99" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@48a2db72]" started-at="2025-07-27T07:13:55 IST" name="tearDown" finished-at="2025-07-27T07:13:55 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.crm2.tests.LoginPageTest -->
     </test> <!-- Login Page Test -->
-    <test started-at="2025-07-26T13:34:04 IST" name="Product Info Page Test" finished-at="2025-07-26T13:35:19 IST" duration-ms="75908">
-      <class name="com.qa.crm2.tests.ProductPageInfoTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:04 IST" name="setup" finished-at="2025-07-26T13:34:23 IST" duration-ms="18988" status="PASS">
+    <test started-at="2025-07-27T07:12:33 IST" name="Accounts Page Test" finished-at="2025-07-27T07:13:59 IST" duration-ms="86308">
+      <class name="com.qa.crm2.tests.AccountsPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:12:33 IST" name="setup" finished-at="2025-07-27T07:13:18 IST" duration-ms="45583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="accSetup()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:13:18 IST" name="accSetup" finished-at="2025-07-27T07:13:20 IST" duration-ms="1698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accSetup -->
+        <test-method signature="accPageHeadersTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:13:20 IST" name="accPageHeadersTest" finished-at="2025-07-27T07:13:55 IST" duration-ms="35217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accPageHeadersTest -->
+        <test-method signature="accPageTitleTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:13:55 IST" name="accPageTitleTest" finished-at="2025-07-27T07:13:55 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accPageTitleTest -->
+        <test-method signature="accPageURLTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:13:55 IST" name="accPageURLTest" finished-at="2025-07-27T07:13:55 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accPageURLTest -->
+        <test-method signature="isLogoutLinkExistTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:13:55 IST" name="isLogoutLinkExistTest" finished-at="2025-07-27T07:13:56 IST" duration-ms="866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isLogoutLinkExistTest -->
+        <test-method signature="isMyAccountLinkExistTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:13:57 IST" name="isMyAccountLinkExistTest" finished-at="2025-07-27T07:13:57 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMyAccountLinkExistTest -->
+        <test-method signature="searchTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:13:57 IST" name="searchTest" finished-at="2025-07-27T07:13:58 IST" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@634ff56]" started-at="2025-07-27T07:13:58 IST" name="tearDown" finished-at="2025-07-27T07:13:59 IST" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm2.tests.AccountsPageTest -->
+    </test> <!-- Accounts Page Test -->
+    <test started-at="2025-07-27T07:12:33 IST" name="Search Results Page Test" finished-at="2025-07-27T07:14:00 IST" duration-ms="87690">
+      <class name="com.qa.crm2.tests.SearchResultsTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@2693c618]" started-at="2025-07-27T07:12:33 IST" name="setup" finished-at="2025-07-27T07:13:18 IST" duration-ms="44797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,15 +100,152 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="infoPageSetup()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:23 IST" name="infoPageSetup" finished-at="2025-07-26T13:34:27 IST" duration-ms="4494" status="PASS">
+        <test-method is-config="true" signature="searchResultsSetup()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@2693c618]" started-at="2025-07-27T07:13:18 IST" name="searchResultsSetup" finished-at="2025-07-27T07:13:20 IST" duration-ms="2121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchResultsSetup -->
+        <test-method signature="searchResultsCountTest(java.lang.String,int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@2693c618]" started-at="2025-07-27T07:13:20 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-27T07:13:56 IST" duration-ms="36363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[macbook]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchResultsCountTest -->
+        <test-method signature="searchResultsCountTest(java.lang.String,int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@2693c618]" started-at="2025-07-27T07:13:57 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-27T07:13:58 IST" duration-ms="1042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[imac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchResultsCountTest -->
+        <test-method signature="searchResultsCountTest(java.lang.String,int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@2693c618]" started-at="2025-07-27T07:13:58 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-27T07:13:59 IST" duration-ms="1378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchResultsCountTest -->
+        <test-method signature="searchResultsTest()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@2693c618]" started-at="2025-07-27T07:13:59 IST" name="searchResultsTest" finished-at="2025-07-27T07:14:00 IST" duration-ms="1189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchResultsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@2693c618]" started-at="2025-07-27T07:14:00 IST" name="tearDown" finished-at="2025-07-27T07:14:00 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm2.tests.SearchResultsTest -->
+    </test> <!-- Search Results Page Test -->
+    <test started-at="2025-07-27T07:12:33 IST" name="Add To Cart Page Test" finished-at="2025-07-27T07:14:49 IST" duration-ms="136242">
+      <class name="com.qa.crm2.tests.AddToCartPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@1b90fee4]" started-at="2025-07-27T07:12:33 IST" name="setup" finished-at="2025-07-27T07:14:08 IST" duration-ms="95348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="infoAddToCartSetup()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@1b90fee4]" started-at="2025-07-27T07:14:08 IST" name="infoAddToCartSetup" finished-at="2025-07-27T07:14:10 IST" duration-ms="1419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoAddToCartSetup -->
+        <test-method signature="addToCartPageTitleTest()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@1b90fee4]" started-at="2025-07-27T07:14:10 IST" name="addToCartPageTitleTest" finished-at="2025-07-27T07:14:48 IST" duration-ms="38372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@1b90fee4]" started-at="2025-07-27T07:14:48 IST" name="tearDown" finished-at="2025-07-27T07:14:49 IST" duration-ms="1022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm2.tests.AddToCartPageTest -->
+    </test> <!-- Add To Cart Page Test -->
+    <test started-at="2025-07-27T07:12:33 IST" name="Login Page Test Firefox" finished-at="2025-07-27T07:15:33 IST" duration-ms="180012">
+      <class name="com.qa.crm2.tests.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.LoginPageTest@484149eb]" started-at="2025-07-27T07:12:33 IST" name="setup" finished-at="2025-07-27T07:14:55 IST" duration-ms="141979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="forgotPwdLinkExistTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@484149eb]" started-at="2025-07-27T07:14:55 IST" name="forgotPwdLinkExistTest" finished-at="2025-07-27T07:15:30 IST" duration-ms="35475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPwdLinkExistTest -->
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@484149eb]" started-at="2025-07-27T07:15:30 IST" name="loginPageTitleTest" finished-at="2025-07-27T07:15:30 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method signature="loginPageUrlTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@484149eb]" started-at="2025-07-27T07:15:30 IST" name="loginPageUrlTest" finished-at="2025-07-27T07:15:30 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageUrlTest -->
+        <test-method signature="loginTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@484149eb]" started-at="2025-07-27T07:15:30 IST" name="loginTest" finished-at="2025-07-27T07:15:32 IST" duration-ms="1379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@484149eb]" started-at="2025-07-27T07:15:32 IST" name="tearDown" finished-at="2025-07-27T07:15:33 IST" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm2.tests.LoginPageTest -->
+    </test> <!-- Login Page Test Firefox -->
+    <test started-at="2025-07-27T07:12:33 IST" name="Product Info Page Test" finished-at="2025-07-27T07:16:42 IST" duration-ms="249256">
+      <class name="com.qa.crm2.tests.ProductPageInfoTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:12:33 IST" name="setup" finished-at="2025-07-27T07:13:18 IST" duration-ms="44797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="infoPageSetup()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:13:18 IST" name="infoPageSetup" finished-at="2025-07-27T07:13:20 IST" duration-ms="2173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- infoPageSetup -->
-        <test-method signature="addItemTest()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:27 IST" name="addItemTest" finished-at="2025-07-26T13:34:33 IST" duration-ms="6255" status="PASS">
+        <test-method signature="addItemTest()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:13:20 IST" name="addItemTest" finished-at="2025-07-27T07:13:58 IST" duration-ms="38308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemTest -->
-        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:33 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-26T13:34:41 IST" duration-ms="7969" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:13:58 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-27T07:14:00 IST" duration-ms="1928" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -237,7 +261,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:41 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-26T13:34:44 IST" duration-ms="2192" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:14:00 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-27T07:14:37 IST" duration-ms="36772" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,7 +277,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:44 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-26T13:34:46 IST" duration-ms="2126" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:14:37 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-27T07:14:38 IST" duration-ms="1274" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -269,7 +293,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:46 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-26T13:34:53 IST" duration-ms="6986" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:14:38 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-27T07:14:39 IST" duration-ms="1237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -285,91 +309,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:53 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-26T13:34:54 IST" duration-ms="1238" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[macbook]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MacBook Pro]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:54 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-26T13:34:56 IST" duration-ms="1684" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[iMac]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:56 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-26T13:34:57 IST" duration-ms="1452" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samsung]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Samsung SyncMaster 941BW]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:57 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-26T13:34:59 IST" duration-ms="1399" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samsung]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Samsung Galaxy Tab 10.1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:34:59 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-26T13:35:05 IST" duration-ms="6376" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:14:39 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-27T07:14:41 IST" duration-ms="1346" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -390,7 +330,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:35:05 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-26T13:35:06 IST" duration-ms="1409" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:14:41 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-27T07:15:17 IST" duration-ms="36696" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -411,7 +351,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:35:06 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-26T13:35:07 IST" duration-ms="1021" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:15:17 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-27T07:15:19 IST" duration-ms="1184" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -432,7 +372,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:35:07 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-26T13:35:09 IST" duration-ms="1022" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:15:19 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-27T07:15:20 IST" duration-ms="1224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -453,7 +393,91 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:35:09 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-26T13:35:11 IST" duration-ms="2005" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:15:21 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-27T07:15:57 IST" duration-ms="36513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[macbook]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MacBook Pro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:15:57 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-27T07:15:59 IST" duration-ms="1766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[imac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:15:59 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-27T07:16:01 IST" duration-ms="1377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung SyncMaster 941BW]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:16:01 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-27T07:16:03 IST" duration-ms="2863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung Galaxy Tab 10.1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:16:03 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-27T07:16:40 IST" duration-ms="36784" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -474,15 +498,131 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productInfoTest()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:35:11 IST" name="productInfoTest" finished-at="2025-07-26T13:35:19 IST" duration-ms="8858" status="PASS">
+        <test-method signature="productInfoTest()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:16:40 IST" name="productInfoTest" finished-at="2025-07-27T07:16:42 IST" duration-ms="1541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productInfoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@59939293]" started-at="2025-07-26T13:35:19 IST" name="tearDown" finished-at="2025-07-26T13:35:19 IST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@6975fb1c]" started-at="2025-07-27T07:16:42 IST" name="tearDown" finished-at="2025-07-27T07:16:42 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.crm2.tests.ProductPageInfoTest -->
     </test> <!-- Product Info Page Test -->
+    <test started-at="2025-07-27T07:13:57 IST" name="Register Page Test" finished-at="2025-07-27T07:17:03 IST" duration-ms="186548">
+      <class name="com.qa.crm2.tests.RegPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.RegPageTest@7066363]" started-at="2025-07-27T07:13:57 IST" name="setup" finished-at="2025-07-27T07:15:39 IST" duration-ms="102057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="regSetup()[pri:0, instance:com.qa.crm2.tests.RegPageTest@7066363]" started-at="2025-07-27T07:15:39 IST" name="regSetup" finished-at="2025-07-27T07:15:40 IST" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regSetup -->
+        <test-method signature="userRegTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.RegPageTest@7066363]" started-at="2025-07-27T07:15:40 IST" name="userRegTest" data-provider="getUserRegTestDataFromExcel" finished-at="2025-07-27T07:16:20 IST" duration-ms="39820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gupta]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[98765456789]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[gg@123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegTest -->
+        <test-method signature="userRegTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.RegPageTest@7066363]" started-at="2025-07-27T07:16:20 IST" name="userRegTest" data-provider="getUserRegTestDataFromExcel" finished-at="2025-07-27T07:16:24 IST" duration-ms="3735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shilpa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mamiidipelli]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[98765456780]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sh@123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegTest -->
+        <test-method signature="userRegTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm2.tests.RegPageTest@7066363]" started-at="2025-07-27T07:16:24 IST" name="userRegTest" data-provider="getUserRegTestDataFromExcel" finished-at="2025-07-27T07:17:03 IST" duration-ms="38868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Om]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gautam]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[88765456780]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[om@123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.RegPageTest@7066363]" started-at="2025-07-27T07:17:03 IST" name="tearDown" finished-at="2025-07-27T07:17:03 IST" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm2.tests.RegPageTest -->
+    </test> <!-- Register Page Test -->
   </suite> <!-- Open Cart Regression Suite -->
 </testng-results>
