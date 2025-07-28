@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     tools {
-        maven 'maven'              // Defined in Jenkins > Global Tool Config
-        jdk 'JDK 21'               // Same here
-        allure 'allure'            // Same here
+        maven 'maven'
+        jdk 'JDK 21'
+        allure 'allure'
     }
 
     environment {
@@ -13,15 +13,16 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+        stage('Checkout Automation Project') {
             steps {
-                git 'https://github.com/pravalmishra/UI'
+                // Clone the correct project repo
+                git branch: 'main', url: 'https://github.com/pravalmishra/UI'
             }
         }
 
         stage('Build and Test') {
             steps {
-                sh 'mvn clean install'
+                sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regression.xml -Denv=dev'
             }
         }
 
@@ -29,7 +30,6 @@ pipeline {
             steps {
                 allure([
                     includeProperties: false,
-                    jdk: '',
                     results: [[path: 'target/allure-results']]
                 ])
             }
