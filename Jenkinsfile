@@ -15,7 +15,6 @@ pipeline {
     stages {
         stage('Checkout Automation Project') {
             steps {
-                // Clone the correct project repo
                 git branch: 'main', url: 'https://github.com/pravalmishra/UI'
             }
         }
@@ -26,29 +25,31 @@ pipeline {
             }
         }
 
-         stage('Publish Allure Reports') {
-           steps {
+        stage('Publish Allure Reports') {
+            steps {
                 script {
                     allure([
                         includeProperties: false,
                         jdk: '',
                         properties: [],
                         reportBuildPolicy: 'ALWAYS',
-                        results: [[path: '/allure-results']]
+                        results: [[path: 'target/allure-results']]
                     ])
                 }
             }
         }
 
-         stage('Publish Extent Report'){
-            steps{
-                     publishHTML([allowMissing: false,
-                                  alwaysLinkToLastBuild: false, 
-                                  keepAll: true, 
-                                  reportDir: 'reports', 
-                                  reportFiles: 'TestExecutionReport.html', 
-                                  reportName: 'HTML Regression Extent Report', 
-                                  reportTitles: ''])
+        stage('Publish Extent Report') {
+            steps {
+                publishHTML([
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false, 
+                    keepAll: true, 
+                    reportDir: 'reports', 
+                    reportFiles: 'TestExecutionReport.html', 
+                    reportName: 'HTML Regression Extent Report', 
+                    reportTitles: ''
+                ])
             }
         }
     }
@@ -56,6 +57,37 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: '**/target/allure-results/*', allowEmptyArchive: true
+        }
+
+        success {
+            emailext subject: "✅ Jenkins Job SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: """<p>✅ <b>Build SUCCESSFUL</b></p>
+                              <p><b>Project:</b> ${env.JOB_NAME}</p>
+                              <p><b>Build Number:</b> #${env.BUILD_NUMBER}</p>
+                              <p><b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>""",
+                     recipientProviders: [[$class: 'DevelopersRecipientProvider']],
+                     to: 'pravalm@gmail.com',
+                     mimeType: 'text/html'
+        }
+
+        unstable {
+            emailext subject: "⚠️ Jenkins Job UNSTABLE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: """<p>⚠️ <b>Build UNSTABLE</b> (likely test failures)</p>
+                              <p><b>Project:</b> ${env.JOB_NAME}</p>
+                              <p><b>Build Number:</b> #${env.BUILD_NUMBER}</p>
+                              <p><b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>""",
+                     to: 'pravalm@gmail.com',
+                     mimeType: 'text/html'
+        }
+
+        failure {
+            emailext subject: "❌ Jenkins Job FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: """<p>❌ <b>Build FAILED</b></p>
+                              <p><b>Project:</b> ${env.JOB_NAME}</p>
+                              <p><b>Build Number:</b> #${env.BUILD_NUMBER}</p>
+                              <p><b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>""",
+                     to: 'pravalm@gmail.com',
+                     mimeType: 'text/html'
         }
     }
 }
