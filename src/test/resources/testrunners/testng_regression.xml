@@ -12,6 +12,9 @@
 
 	<test name="Login Page Test">
       <parameter name="browser" value="chrome"></parameter>
+      <parameter name="browserversion" value="124.0" />
+      <parameter name="testname"
+			value="OpenCart-ProductInfo Page Test" />
   
 		<classes>
 			<class name="com.qa.crm2.tests.LoginPageTest" />
@@ -21,7 +24,9 @@
 	
 	<test name="Login Page Test Firefox">
       <parameter name="browser" value="firefox"></parameter>
-  
+      <parameter name="browserversion" value="124.0" />
+      <parameter name="testname"
+			value="OpenCart-ProductInfo Page Test" />
 		<classes>
 			<class name="com.qa.crm2.tests.LoginPageTest" />
 
@@ -31,6 +36,8 @@
 
 	<test name="Accounts Page Test">
 	  <parameter name="browser" value="firefox"></parameter>
+	  <parameter name="testname"
+			value="OpenCart-ProductInfo Page Test" />
        <classes>
 			<class name="com.qa.crm2.tests.AccountsPageTest" />
 		</classes>
@@ -38,6 +45,9 @@
 
 	<test name="Search Results Page Test">
 	    <parameter name="browser" value="chrome"></parameter>
+	    <parameter name="browserversion" value="123.0" />
+	    <parameter name="testname"
+			value="OpenCart-ProductInfo Page Test" />
        <classes>
 			<class name="com.qa.crm2.tests.SearchResultsTest" />
 		</classes>
@@ -45,6 +55,9 @@
 
 	<test name="Product Info Page Test">
 	    <parameter name="browser" value="chrome"></parameter>
+	      <parameter name="browserversion" value="123.0" />
+	    <parameter name="testname"
+			value="OpenCart-ProductInfo Page Test" />
 		<classes>
 			<class name="com.qa.crm2.tests.ProductPageInfoTest" />
 		</classes>
@@ -52,6 +65,9 @@
 	
 	<test name="Add To Cart Page Test">
          <parameter name="browser" value="firefox"></parameter>
+          <parameter name="browserversion" value="124.0" />
+      <parameter name="testname"
+			value="OpenCart-ProductInfo Page Test" />
 		<classes>
 			<class name="com.qa.crm2.tests.AddToCartPageTest" />
 		</classes>
@@ -59,6 +75,9 @@
 
 	<test name="Register Page Test">
 	   <parameter name="browser" value="firefox"></parameter>
+	    <parameter name="browserversion" value="124.0" />
+      <parameter name="testname"
+			value="OpenCart-ProductInfo Page Test" />
 		<classes>
 			<class name="com.qa.crm2.tests.RegPageTest" />
 		</classes>
