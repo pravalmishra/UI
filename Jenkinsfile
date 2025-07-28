@@ -60,8 +60,8 @@ pipeline {
         }
 
         success {
-            emailext subject: "✅ Jenkins Job SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                     body: """<p>✅ <b>Build SUCCESSFUL</b></p>
+            emailext subject: "Jenkins Job SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: """<p><b>Build SUCCESSFUL</b></p>
                               <p><b>Project:</b> ${env.JOB_NAME}</p>
                               <p><b>Build Number:</b> #${env.BUILD_NUMBER}</p>
                               <p><b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>""",
@@ -71,8 +71,8 @@ pipeline {
         }
 
         unstable {
-            emailext subject: "⚠️ Jenkins Job UNSTABLE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                     body: """<p>⚠️ <b>Build UNSTABLE</b> (likely test failures)</p>
+            emailext subject: "Jenkins Job UNSTABLE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: """<p><b>Build UNSTABLE</b> (likely test failures)</p>
                               <p><b>Project:</b> ${env.JOB_NAME}</p>
                               <p><b>Build Number:</b> #${env.BUILD_NUMBER}</p>
                               <p><b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>""",
@@ -81,8 +81,8 @@ pipeline {
         }
 
         failure {
-            emailext subject: "❌ Jenkins Job FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                     body: """<p>❌ <b>Build FAILED</b></p>
+            emailext subject: "Jenkins Job FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: """<p><b>Build FAILED</b></p>
                               <p><b>Project:</b> ${env.JOB_NAME}</p>
                               <p><b>Build Number:</b> #${env.BUILD_NUMBER}</p>
                               <p><b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>""",
